@@ -36,10 +36,10 @@ holybot.on('message', (message) => {
                 message.reply("Вы вышли из поиска матча <:crowdDuck:440145681731158028> ")}});
 holybot.on('message', (message) => {
     if(message.content == "!старт") {
-       message.channel.send("Набор открыт");
+       message.channel.send("!here Набор открыт");
     a=1;}
     if(message.content == "!стоп") {
-       message.channel.send("Набор закрыт");
+       message.channel.send("!here Набор закрыт");
     a=0;}
     
 });
