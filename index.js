@@ -4,9 +4,8 @@ holybot.registry.registerGroup('random', 'Random');!
 holybot.registry.registerCommandsIn(__dirname + "/commands");
 
 holybot.login("NDUwNjE1NjAwMzAyMTI5MTUy.De88OQ.7n08MAGKj4QLdYBvpLbGx3CBvF0");
-
 holybot.on('message', (message) => {
-    if(message.content == "!войти") 
+    if(message.content == "!войти" && a == 1) 
        message.reply("Вы зарегистрированы <:senpai:451773127446233088> ")});
        
        holybot.on('message', message => {
@@ -14,7 +13,7 @@ holybot.on('message', (message) => {
         let role = message.guild.roles.find("name", "Участник Турнира");
         let member = message.member;
       
-      if (message.content == '!войти') {
+      if (message.content == '!войти' && a == 1) {
           member.addRole(role).catch(console.error);
         }});
 
@@ -35,6 +34,16 @@ holybot.on('message', (message) => {
             if (message.content == '!анлфмhah234') {
                 member.removeRole(role).catch(console.error);
                 message.reply("Вы вышли из поиска матча <:crowdDuck:440145681731158028> ")}});
+holybot.on('message', (message) => {
+    if(message.content == "!старт") {
+       message.reply("Набор открыт");
+    a=1;}
+    if(message.content == "!стоп") {
+       message.reply("Набор закрыт");
+    a=0;}
+    
+});
+
 
 
 
