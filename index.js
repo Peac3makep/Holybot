@@ -36,10 +36,10 @@ holybot.on('message', (message) => {
                 message.reply("Вы вышли из поиска матча <:crowdDuck:440145681731158028> ")}});
 holybot.on('message', (message) => {
     if(message.content == "!старт" && message.member.roles.has(<@328586086991396866>)) {
-       message.reply("Набор открыт");
+       message.channel.send("!here Набор открыт");
     a=1;}
     if(message.content == "!стоп" && message.member.roles.has(<@328586086991396866>)) {
-       message.reply("Набор закрыт");
+       message.channel.send("!here Набор закрыт");
     a=0;}
     
 });
