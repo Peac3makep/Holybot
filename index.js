@@ -7,7 +7,7 @@ holybot.login("NDUwNjE1NjAwMzAyMTI5MTUy.De88OQ.7n08MAGKj4QLdYBvpLbGx3CBvF0");
 holybot.on('message', (message) => {
     if(message.content == "!войти" && a == 1) 
        message.reply("Вы зарегистрированы <:senpai:451773127446233088> ")
-           else  message.reply("Вы не можете зарегистрироваться")}
+          
           );
        
        holybot.on('message', message => {
