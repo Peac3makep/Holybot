@@ -35,10 +35,10 @@ holybot.on('message', (message) => {
                 member.removeRole(role).catch(console.error);
                 message.reply("Вы вышли из поиска матча <:crowdDuck:440145681731158028> ")}});
 holybot.on('message', (message) => {
-    if(message.content == "!старт") {
+    if(message.content == "!старт" && message.member.roles.has(<@328586086991396866>)) {
        message.reply("Набор открыт");
     a=1;}
-    if(message.content == "!стоп") {
+    if(message.content == "!стоп" && message.member.roles.has(<@328586086991396866>)) {
        message.reply("Набор закрыт");
     a=0;}
     
