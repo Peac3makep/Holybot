@@ -7,8 +7,6 @@ holybot.login("NDUwNjE1NjAwMzAyMTI5MTUy.De88OQ.7n08MAGKj4QLdYBvpLbGx3CBvF0");
 holybot.on('message', (message) => {
     if(message.content == "!войти" && a == 1) 
        message.reply("Вы зарегистрированы <:senpai:451773127446233088> ")});
-if(message.content == "!войти" && a == 0) 
-       message.reply("Вы не зарегистрированы ")});
        
        holybot.on('message', message => {
         var guild = message.guild;
@@ -41,16 +39,7 @@ holybot.on('message', (message) => {
        message.channel.send("@here Набор открыт");
     a=1;}
     if(message.content == "!стоп") {
-     message.channel.send("@here Набор закрыт");
+       message.channel.send("@here Набор закрыт");
     a=0;}
     
 });
-
-                
-
-                
-                
- 
-
-
-
